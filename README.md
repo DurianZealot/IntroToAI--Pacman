@@ -111,3 +111,63 @@ Implement the function `findPathToClosestDot` in `searchAgents.py`. The agent so
 #### Run all questions with auto grader, please go to `/A1-Search` and run `python autograder.py`
 
  
+
+
+
+
+
+# PacMan-A2-Game Tree Search
+
+### For details, please see `PacManSearch-GameTreeSearch.pdf` under `/A2-GameTreeSearch`
+
+
+
+### Question 1: Reflex Agent
+
+Improve the `ReflexAgent` in `multiAgents.py` to play respectably. The provided reflex agent code provides some helpful examples of methods that query the `GameState` for information. A capable reflex agent will have to consider both food locations and ghost locations to perform well.
+
+
+
+Implementation will easily and reliably clear `testClassic` layout and `mediumClassic` layout
+
+`python3 pacman.py -p ReflexAgent -l testClassic`
+
+`python3 pacman.py --frameTime 0 -p ReflexAgent -k 1`
+
+`python3 pacman.py --frameTime 0 -p ReflexAgent -k 2`
+
+
+
+The agent will be able to get an average more than 1000 points over 10 winining games
+
+
+
+### Question 2: Minimax
+
+Write an adversarial search agent in the provided `MinimaxAgent` class stub in `multiAgents.py`. The minimax search will work with any number of ghosts. In particular, for every max layer (where the pacman moves) the minimax tree will have multiple min layers, one for each ghost.
+
+Run`python autograder.py -q q2`
+
+### Question 3: Alpha-Beta Pruning
+
+Make a new agent that uses alpha-beta pruning to more efficiently explore the minimax tree, in `AlphaBetaAgent`
+
+Run`python autograder.py -q q3`
+
+### Question 4: Expectimax
+
+Implement the `ExpectimaxAgent`, which is useful for modeling probabilistic behavior of agents who may make suboptimal choices.
+
+Run`python autograder.py -q q4`
+
+### Question 5: Evaluation Function
+
+Write a better evaluation function for pacman in the provided function `betterEvaluationFunction`. 
+
+The implementation will win 10 times and get an average score of at least 1000.
+
+Run`python autograder.py -q q5`
+
+
+
+#### Run all questions with auto grader, please go to `/A2-GameTreeSearch` and run `python autograder.py`
