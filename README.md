@@ -274,3 +274,50 @@ Implement a solver for the following plane scheduling problem by encoding the pr
 
 #### Run all questions with auto grader, please go to `/A3-CSPs` and run `python autograder.py`
 
+
+
+# PacMan-A4-Ghost Busters
+
+### For details, please see `PacManSearch-GhostBusters.pdf` under `/A4-GhostBusters`
+
+### Question 1: Observation Probability
+
+ Implement the `getObservationProb` method in the `InferenceModule` base class in `inference.py` 
+
+### Question 2: Exact Inference Observation
+
+Implement the `observeUpdate` method in `ExactInference` class of `inference.py` to correctly update the agent’s belief distribution over ghost positions given an observation from Pacman’s sensors
+
+### Question 3: Exact Inference with Time Elapse
+
+ Implement the `elapseTime` method in `ExactInference` . 
+
+### Question 4: Exact Inference Full Test
+
+Implement the `chooseAction` method in `GreedyBustersAgent` in `bustersAgents.py` 
+
+### Question 5: Approximate Inference Initialization and Beliefs
+
+Implement the functions `initializeUniformly` and `getBeliefDistribution` in the `ParticleFilter` class in `inference.py`
+
+### Question 6: Approximate Inference Observation
+
+ Implement the `observeUpdate` method in the `ParticleFilter` class in `inference.py` . 
+
+### Question 7: Approximate Inference with Time Elapse
+
+Implement the `elapseTime` function in the `ParticleFilter` class in `inference.py`. 
+
+### Question 8: Joint Particle Filter Observation
+
+Implement the `initializeUniformly` method in `JointParticleFilter` in `inference.py`. 
+
+### Question 9: Joint Particle Filter Observation
+
+Implement  the `observeUpdate` method in the `JointParticleFilter` class of `inference.py`
+
+### Question 10: Joint Particle Filter Time Elapse and Full Test
+
+Implement the `elapseTime` method in `JointParticleFilter` in `inference.py` to resample each particle correctly for the Bayes net.
+
+#### Run all questions with auto grader, please go to `/A3-GhostBuster` and run `python autograder.py`
